@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --color-white: #ffffff;
+  --color-1: #284b63;
+  --color-2: #549da0;
+  --color-3: #353535;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+header {
+  background-color: var(--color-1);
+  width: 100%;
+  height: calc(100vh - 45%);
+}
+header article {
+  padding: 50px;
+  text-align: center;
+}
+header article h2 {
+  color: var(--color-white);
+  font-size: 60px;
+}
+header article p {
+  color: var(--color-white);
+  font-size: 30px;
+  font-weight: 100;
+  font-family: RobotoThin;
+}
+.up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  padding: 15px 20px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.btn-style1 {
+  background-color: var(--color-2);
+  color: var(--color-white);
+  font-size: 25px;
+}
+.btn-style1:hover {
+  color: var(--color-2);
+  background-color: var(--color-white);
+  transition: all 500ms ease;
+}
+.container-mini {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card {
+  margin: 0 45px;
+  text-align: center;
+}
+.card p {
+  color: var(--color-3);
+  font-size: 20px;
+}
+.icon svg {
+  width: 110px;
+  height: 110px;
+  color: var(--color-1);
+}
+.list-menu li a {
+  margin: 0 15px;
+  font-size: 18px;
+  color: var(--color-white);
+  opacity: 0.7;
+}
+.list-menu li a:hover {
+  opacity: 1;
+  transition: all 500ms ease;
+}
+.m-t-20 {
+  margin: 20px 0;
+}
+.m-t-10 {
+  margin: 10px 0;
+}
+.father {
+  width: 100%;
+  padding: 50px;
+  height: calc(100vh - 65%);
+}
+.quote {
+  background-color: var(--color-2);
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 80%);
+  padding: 25px;
+}
+.quote h4 {
+  color: var(--color-white);
+  font-size: 30px;
+  font-weight: 400;
+}
+.quote p {
+  color: var(--color-white);
+  font-size: 20px;
+}
+footer {
+  background-color: var(--color-3);
+  padding: 25px;
+  height: calc(100vh - 80%);
+  width: 100%;
+}
+footer p {
+  text-align: center;
+  color: var(--color-white);
+  opacity: 0.5;
+  font-family: RobotoThin;
+  font-weight: lighter;
+  font-size: 15px;
+}
+@media only screen and (max-width: 1024px) {
+  /* ----------- start header -----------*/
+  header article h2 {
+    font-size: 35px;
+  }
+  header article p {
+    font-size: 20px;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    margin: 0;
+  }
+  body,
+  .quote,
+  .father,
+  header,footer {
+    height: 100%;
+  }
+}
